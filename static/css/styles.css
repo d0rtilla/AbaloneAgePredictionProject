@@ -3,3 +3,9 @@
     max-width: 25%;
     height: auto;
   }
+
+.tableauPlaceholder {
+  margin: 150px;
+  width: 300px;
+  height: 150px;
+}
