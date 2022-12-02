@@ -33,3 +33,18 @@ A score of ***0.5443***. Better, but still not very good.
 
 ## Neural Network
 We ran several tests with a neural network, adding hidden layers and more epochs along the way, but the test scores still ranged from only ***0.5117*** to ***0.5778***.
+
+## Keras Tuner
+*TBD*
+
+# Results
+
+The tests proved that our data would be either unable to be tested or would be unreliable to run a linear regression model. Therefore, we are unable to make a proper prediction.
+
+# Recreate The Results
+
+> 1. Clone the repo
+> 2. Open Google Colabs
+> 3. Import the `Abalone_Age_Prediction.ipynb` file
+> 4. Run the cells in the colab notebook in order
+
