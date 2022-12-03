@@ -9,3 +9,22 @@
   margin-right: 300px;
   
 }
+
+.container {
+  width:700px;
+  height:600px;
+}
+
+.title {
+  margin-left: 400px;
+  color:gray;
+}
+
+.title0 {
+  margin-left: 340px;
+  color:gray ;
+}
+
+.title1 {
+  margin-left:450px;
+}
