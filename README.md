@@ -19,14 +19,14 @@ With such a large data set to work with, there were bound to be outliers that co
 
 ### Approaching the Models
 Here is the approach we took to prepare the data for each model:
-1. Instantiate the model.
-1. Create our features matrix (X) and our target (y) vector.
-1. Use SciKit-Learn's `train_test_split` to create a training and a testing set of data.
-1. Instantiate a scaler, fit the scaler to the training feature set, and use the fitted scaler to transform the training and testing feature sets.
-1. Fit the model to the training data set.
-1. Evaluate the model on the training data set. This is to check if a model is overfitting the data.
-1. Evaluate the model on the testing data set.
-1. Calculate the R<sup>2</sup> value to determine how well the model performed.
+> 1. Instantiate the model.
+> 1. Create our features matrix (X) and our target (y) vector.
+> 1. Use SciKit-Learn's `train_test_split` method to create a training and a testing set of data.
+> 1. Instantiate a scaler, fit the scaler to the training feature set, and use the fitted scaler to transform the training and testing feature sets.
+> 1. Fit the model to the training data set.
+> 1. Evaluate the model on the training data set. This is to check if a model is overfitting the data.
+> 1. Evaluate the model on the testing data set.
+> 1. Calculate the R<sup>2</sup> value to determine how well the model performed.
 
 ### Multiple Linear Regression Models
 
@@ -38,15 +38,15 @@ We next tried using the Min-Max Scaler from SciKit-Learn instead of the Standard
 
 Since we weren't obtaining strong R<sup>2</sup> values with the linear regression models, we decided to try other types of supervised regression models. 
 
-### K Nearest Neighbors
+### K Nearest Neighbors Regression
 The first non-linear model that we tried was a k-Nearest Neighbors Regressor. This regression model requires an additional step of determining the most appropriate value of k to use for the regression. We graphed the testing accuracy for odd values of k from 1 to 19, and the graph appeared to level off around k = 7. We decided to try using k = 5, 7, and 9 to see if any of them produced better results than the multiple linear regressors.
 
 For k = 5, we got an R<sup>2</sup> value of 51.442%. For k = 7, we got an R<sup>2</sup> value of 51.758%. For k = 9, we got an R<sup>2</sup> value of 51.844%. None of the k-Nearest Neighbor models performed better than the multiple linear regression models. Additionally, the k-Nearest Neighbors models appeared to overfit the data, since the R<sup>2</sup> values for the training data set were significantly higher than the R<sup>2</sup> values for the testing data set.
 
 ### Support Vector Regression
-A score of ***0.5443***. Better, but still not very good.
+Our next approach was to use a Support Vector Regressor. This regressor resulted in an R<sup>2</sup> value of 54.430%. This model performed better than any of the previous models, and did not overfit the data. We continued trying other models with the aim of producing a model that performs better.
 
-### Random Forest Regressor
+### Random Forest Regression
 ***0.5533***. Getting there, but not something we could work with.
 
 ### Neural Network
