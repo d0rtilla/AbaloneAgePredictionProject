@@ -12,4 +12,4 @@ This project experiments with supervised machine learning algorithms to attempt 
 1. Run the cells to create the desired model(s).
     - *Note*: All models require the first two sections ("Extract and Transform Data" and "Visualizing Parameters") to be run before the model itself can be run.
     - *Note*: If the model of interest resides within a collapsible segment of similar models, the first group of cells in that segment must be run. These cells set up the infrastructure on which the subsequent models rely.
-    - The data is pulled in from an AWS S3 bucket. If that does not work for whatever reason, the CSV of the data is located in the `Resources` folder, or at the following URL: (https://archive.ics.uci.edu/ml/datasets/Abalone).
+    - The data is pulled in from an AWS S3 bucket. If that does not work for whatever reason, the CSV of the data is located in the `Resources` folder, or at the following [link](https://archive.ics.uci.edu/ml/datasets/Abalone).
