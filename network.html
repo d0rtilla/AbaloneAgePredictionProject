@@ -78,12 +78,10 @@
     <div class='tableauPlaceholder2' id='viz1670315680798' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;R2&#47;R2valuesofeachNeuralNetwork&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='R2valuesofeachNeuralNetwork&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;R2&#47;R2valuesofeachNeuralNetwork&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1670315680798');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1020px';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1020px';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
     <div class="container">
-      <div class="jumbotron text-center">
-        <h2>Details:</h2>
-      </div>
+
       <div class="row justify-content-center">
         <div class="span4">
-          
+          <h3>Details:</h3>
           <p>
             Neural Network #1 - In our first neural network model, we set up a network with one hidden layer of 30 densely-connected perceptrons with ReLU activation, and an output layer of one perceptron with a linear activation. We trained this model for 50 epochs before testing it on the test data set. We used Mean Squared Error (MSE) as our loss function, as we trying solve a regression problem rather than a classification problem. The output layer has a linear activation instead of a sigmoid activation for the same reason.
 
@@ -115,9 +113,8 @@
             Neural Network #7 - For our seventh model, we tried adding a fourth hidden layer in hopes that the new layer would increase performance of the model. The model returned an R^2 score of 56.535%. As this model did not perform as well as the previous model with three layers, we decided to look at another approach to improve the performance of our neural networks: Keras Tuner.
 
           </p>
-          <div class="jumbotron text-center">
-            <h3>Keras Tuner:</h3>
-          </div>
+
+          <h3>Keras Tuner:</h3>
           <p>
             We believed that Keras Tuner would be a much more efficient method of testing various different neural network models without having to create each one by ourselves and find the best one using trial and error. We gave all of the Keras Tuner related models the option to try both ReLU and Hyperbolic Tangent activation functions. Once again the models are using Mean Absolute Error as a loss function / evaluation metric, as we are performing a regression.
 
