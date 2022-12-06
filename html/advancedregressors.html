@@ -87,25 +87,32 @@
     </div>
     <div class="jumbotron text-center">
       <h1>Predicting Ages of Abalone</h1>
-    </div>
-    <br />
-    <div class="row justify-content-center">
+    </div>   
+    <!-- <div class="row justify-content-center">
       <img class="center-block" src="/static/img/abalone_shell.png" />
-    </div>
-    <br />
-    <br />
-    <div class="container1">
+    </div> -->
+    <div class="container">
       <div class="row justify-content-center">
         <div class="span4">
           <p>
-             <br />
+            <h3>K Nearest Neighbors</h3>
+            The first non-linear model that we tried was a k-Nearest Neighbors Regressor. This regression model requires an additional step of determining the most appropriate value of k to use for the regression. We graphed the testing accuracy for odd values of k from 1 to 19, and the graph appeared to level off around k = 7. We decided to try using k = 5, 7, and 9 to see if any of them produced better results than the multiple linear regressors.<br><br>
+            For k = 5, we got an R2 value of 51.442%. For k = 7, we got an R2 value of 51.758%. For k = 9, we got an R2 value of 51.844%. None of the k-Nearest Neighbor models performed better than the multiple linear regression models. Additionally, the k-Nearest Neighbors models appeared to overfit the data, since the R2 values for the training data set were significantly higher than the R2 values for the testing data set.
           </p>
+            <img src="/static/img/k_nearest_neighbor_conceptual.png" width="60%"  alt="K Nearest Neighbor conceptual graph"><br>
+            <small>*KNN concept. Credit: https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning</small>
+            <img src="/static/img/knearestneighbor.png" alt="K Nearest Neighbor graph">
           <p>
-            Marie, I said Cheetos, not Fritos. I must've said Cheetos like ten
-            times. You need me to write it down for you? Well, I'm just saying,
-            y'know, I said Cheetos. Ch-ch-ch sound. Virtually impossible to
-            confuse Cheetos with Fritos it seems to me. Where are you going?
+            <h3>Support Vector Regression</h3>
+            Our next approach was to use a Support Vector Regressor. This regressor resulted in an R2 value of 54.430%. This model performed better than any of the previous models, and did not overfit the data. We continued trying other models with the aim of producing a model that performs better.<br>
           </p>
+            <img src="/static/img/svm-boundary-plot.png" alt="SRV conceptual graph">
+            <small>*SVR concep. Credit: UofM class slides</small>
+          <p>
+            <h3>Random Forest Regression</h3>
+            0.5533. Getting there, but not something we could work with.
+          </p>
+            <img src="/static/img/Random Forest Conceptual.png" alt="Random Forest conceptual graph"><small>*Random Forest concept. Credit: https://levelup.gitconnected.com/random-forest-regression-209c0f354c84</small>
         </div>
       </div>
     </div>
