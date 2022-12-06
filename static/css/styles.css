@@ -4,6 +4,12 @@
     height: auto;
   }
 
+.navbar-left{
+  height:30px;
+  width:auto;
+  
+}
+
 .tableauPlaceholder {
   margin-left: 350px;
   margin-right: 300px;
