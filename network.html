@@ -83,34 +83,50 @@
         <div class="span4">
           <h3>Details:</h3>
           <p>
-            Neural Network #1 - In our first neural network model, we set up a network with one hidden layer of 30 densely-connected perceptrons with ReLU activation, and an output layer of one perceptron with a linear activation. We trained this model for 50 epochs before testing it on the test data set. We used Mean Squared Error (MSE) as our loss function, as we trying solve a regression problem rather than a classification problem. The output layer has a linear activation instead of a sigmoid activation for the same reason.
+            Neural Network #1 - In our first neural network model, we set up a network with one hidden 
+            layer of 30 densely-connected perceptrons with ReLU activation, and an output layer of one 
+            perceptron with a linear activation. We trained this model for 50 epochs before testing it 
+            on the test data set. We used Mean Squared Error (MSE) as our loss function, as we trying 
+            solve a regression problem rather than a classification problem. The output layer has a 
+            linear activation instead of a sigmoid activation for the same reason.
 
-            This model produced an R^2 value of 51.172%. This is on par with the performance of the Multiple Linear Regression models, and provides a good starting point. <br />
+            This model produced an R<sup>2</sup> value of 51.172%. This is on par with the 
+            performance of the Multiple Linear Regression models, and provides a good starting point. <br>
           </p>
           <p>
-           Neural Network #2 -  For our first attempt at improving the neural network model, we added a second hidden layer. This hidden layer is identical to the first, with 30 densely-connected perceptrons with a ReLU activation.
-
-            This increased our R^2 value to 55.309%. So far, this model explains the most variance in the data.
+            Neural Network #2 - For our first attempt at improving the neural network model, we added a 
+            second hidden layer. This hidden layer is identical to the first, with 30 densely-connected 
+            perceptrons with a ReLU activation.
+            
+            This increased our R<sup>2</sup> value to 55.309%. So far, this model explains the most variance in 
+            the data.
           </p>
-          Neural Network #3 -  For our third model, we removed the sex indicator columns to see if that would improve our model. Our hypothesis was that the sex indicators could be a confounding factor to our model. We used the same model structure as we did for the previous neural network.
+            Neural Network #3 - For our third model, we removed the sex indicator columns to see if 
+            that would improve our model. Our hypothesis was that the sex indicators could be a 
+            confounding factor to our model. We used the same model structure as we did for the 
+            Neural Network #2.
 
-          This resulted in an R^2 value of 49.901%. This is indicative to us that the sex indicator columns improve the model's performance.
+            This resulted in an R<sup>2</sup> value of 49.901%. This is indicative to us that the sex 
+            indicator columns improve the model's performance.
           <p>
             <br>
-          Neural Network #4 -  In our fourth model, we used the same network structure as Neural Network #2, but we increased the number of epochs that the model trained on the training set from 50 to 100 epochs.
-
-          This resulted in an R^2 value of 55.843%, which was a bit of a decrease from the performance of the original Neural Network #2.
+            Neural Network #4 - In our fourth model, we used the same network structure as Neural 
+            Network #2, but we increased the number of epochs that the model trained on the training 
+            set from 50 to 100 epochs.
+            
+            This resulted in an R<sup>2</sup> value of 55.843%, which was a bit of a decrease from the 
+            performance of the original Neural Network #2.
             
           </p>
             Neural Network #5 - In our fifth model, we added a third hidden layer to our model. This model consists of three layers of 30 densely-connected perceptrons with ReLU activation functions.
 
-            This model produced an R^2 value of 59.190%. This is the best-performing model so far!
+            This model produced an R<sup>2</sup> value of 59.190%. This is the best-performing model so far!
           <p>
             <br>
-            Neural Network #6 - For our sixth neural network model, we took the same parameters as #5, but increased the number of epochs that the model would be trained on to 75; this returned us with a R^2 value of 58.178%.
+            Neural Network #6 - For our sixth neural network model, we took the same parameters as #5, but increased the number of epochs that the model would be trained on to 75; this returned with a R<sup>2</sup>> value of 58.178%.
            <br>
            <br>
-            Neural Network #7 - For our seventh model, we tried adding a fourth hidden layer in hopes that the new layer would increase performance of the model. The model returned an R^2 score of 56.535%. As this model did not perform as well as the previous model with three layers, we decided to look at another approach to improve the performance of our neural networks: Keras Tuner.
+            Neural Network #7 - For our seventh model, we tried adding a fourth hidden layer in hopes that the new layer would increase performance of the model. The model returned an R<sup>2</sup>> score of 56.535%. As this model did not perform as well as the previous model with three layers, we decided to look at another approach to improve the performance of our neural networks: Keras Tuner.
 
           </p>
 
@@ -122,25 +138,25 @@
 
             <br>
             <br>
-            Neural Network #8 - Our first model made with Keras Tuner gave us an R^2 value of 38.824%, which is a lot worse than our previous neural network models. This pushed us to try more complex Keras Tuner models.
+            Neural Network #8 - Our first model made with Keras Tuner gave us an R<sup>2</sup> value of 38.824%, which is a lot worse than our previous neural network models. This pushed us to try more complex Keras Tuner models.
           </p>
           <p>
-            Neural Network #9 - In our second Keras Tuner model, we added a second densely connected hidden layer with ReLU activation. Our thought process was that adding more layers to the previous Keras Tuner model would return us with more favorable results. The model returned to us an R^2 score of -2,915.8%. This is a clear indication that this model does not fit the data well, as R^2 values should be a positive number between 0 - 1.
+            Neural Network #9 - In our second Keras Tuner model, we added a second densely-connected hidden layer with ReLU activation. Our thought process was that adding more layers to the previous Keras Tuner model would return us with more favorable results. The model returned to us an R<sup>2</sup> score of -2,915.8%. This is a clear indication that this model does not fit the data well, as R<sup>2</sup> values should be a positive number between 0 and 1.
             <br>
 
           </p>
           <p>
-            Neural Network #10 - In this model we attempt to get valid results from Keras Tuner by increasing the number training epochs that the model recieves before being evaluated to 50. This results in an R^2 value of -206.08%, which is a massive improvement from the last model that was tested, but still indicated that the model does not fit the data.
+            Neural Network #10 - In this model we attempt to get valid results from Keras Tuner by increasing the number of training epochs that the model recieves before being evaluated to 50. This results in an R<sup>2</sup> value of -206.08%, which is a massive improvement from the last model that was tested, but still indicated that the model does not fit the data.
           <br>
           </p>
           <p>
-            Neural Network #11 - In a final, last-ditch effort to improve our Keras Tuner model we increased the number of training epochs to 75. This resulted in an R^2 value of -487.64%. This indicates again, that this model does not work with our data.
+            Neural Network #11 - In a final, last-ditch effort to improve our Keras Tuner model, we increased the number of training epochs to 75. This resulted in an R<sup>2</sup> value of -487.64%. This indicates again, that this model does not work with our data.
           </p>
           <p>
-            After some discourse with one of our TAs (thank you for all of your help Colin), we found that the Keras Tuner 'Hyperband' tuner that we were using does not allow you to pick your own batch size. We did some tests where we took the parameters of our Keras Tuner models and put them into our first neural nework model, and we did not recieve the same invalid R^2 scores that we recieved with the Keras Tuner models, the only difference between the two models was the batch size, leading us to conclude that perhaps if we were able to choose our own batch size for the hyberband tuner models, we may have had more favorable results. 
+            After some discourse with one of our TAs (thank you for all of your help Colin!), we found that the Keras Tuner 'Hyperband' tuner that we were using does not allow you to pick your own batch size. We did some tests where we took the parameters of our Keras Tuner models and put them into our first neural nework model, and we did not recieve the same invalid R<sup>2</sup> scores that we recieved with the Keras Tuner models. The only difference between the two models was the batch size, leading us to conclude that perhaps if we were able to choose our own batch size for the Hyberband tuner models, we may have had more favorable results. 
             <br>
             <br>
-            One option in a case like this would be to build your own class of tuner, where you would be able to fine-tune the batch size to your liking. We decided that learning how to build our own Keras Tuner class from scratch was not a feasible task for this project due to the limited time frame alloted to us, and the time we had already spent bumbling around with the hyperband tuner in search of valid results.
+            One option in a case like this would be to build our own class of tuner, where we would be able to fine-tune the batch size to our liking. We decided that learning how to build our own Keras Tuner class from scratch was not a feasible task for this project due to the limited time frame alloted to us, and the time we had already spent bumbling around with the Hyperband tuner in search of valid results.
           </p>
         </div>
       </div>
