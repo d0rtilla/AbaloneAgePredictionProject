@@ -13,3 +13,9 @@ This project experiments with supervised machine learning algorithms to attempt 
     - *Note*: All models require the first two sections ("Extract and Transform Data" and "Visualizing Parameters") to be run before the model itself can be run.
     - *Note*: If the model of interest resides within a collapsible segment of similar models, the first group of cells in that segment must be run. These cells set up the infrastructure on which the subsequent models rely.
     - The data is pulled in from an AWS S3 bucket. If that does not work for whatever reason, the CSV of the data is located in the `Resources` folder, or at the following [link](https://archive.ics.uci.edu/ml/datasets/Abalone).
+    
+### Contributor Information
+Jacob Douthett: https://github.com/JaDouth314 | https://www.linkedin.com/in/jacob-douthett-7b5043bb/ <br>
+Sam Espe: https://github.com/SamEspe | https://www.linkedin.com/in/sam-espe/ <br>
+Alan Jallah: https://github.com/ABJay23 | https://www.linkedin.com/in/alan-jallah-a67873161/ <br>
+Jae Neuharth: https://github.com/d0rtilla | https://www.linkedin.com/in/dortilla/
